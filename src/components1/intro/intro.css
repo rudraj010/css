@@ -1,0 +1,92 @@
+
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+  }
+  
+  /* left side styling */
+  .i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .i-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  
+  }
+  .i-name > :nth-child(1) {
+    color:black;
+   
+    font-size: 3rem;
+  }
+
+  .i-name > :nth-child(2) {
+    color: orange;
+    font-weight: bold;
+    font-size: 3rem;
+   
+  }
+  .i-name > :nth-child(3) {
+    font-weight: bold;
+    font-size: 1.5rem;
+  
+    color: gray;
+    margin-top: 10px;
+  }
+  .i-button {
+    width: 8rem;
+    height: 3rem;
+  }
+
+  .i-icons {
+   
+   display: flex;
+   gap: 4vw;
+ 
+    
+    
+  }
+  .i-icons,a>:nth-child(1) {
+   
+    border-radius: 30px;
+    
+  }
+  
+  
+  .i-icons > *:hover {
+    cursor: pointer;
+  }
+
+  .i-right>:nth-child(1){
+    
+ 
+   width: 42vw;
+  
+
+  display:flex;
+  float: right;
+  position: relative;
+  left: 6rem;
+
+height: 39vw;
+bottom:2vw;
+  }
+  
+  
+  .i-emoji>:nth-child(1){
+  
+   float: right;
+   position:relative;
+  
+ bottom: 41vw;
+right:25rem;
+  
+    width: 9vw;
+   
+  }
+  

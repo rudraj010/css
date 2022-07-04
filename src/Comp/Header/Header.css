@@ -1,0 +1,67 @@
+.header{
+    
+    flex:1.2;
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    flex: 1;
+    background-color: var(--bg-color-1);
+    padding: 20px;
+    overflow-y: scroll;
+  }
+  
+  .header p {
+    font-size: 1rem;
+    line-height: 1.875rem;
+    color: var(--text-color-1);
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header_expression {
+    overflow-x: scroll;
+    width: 100%;
+    min-height: 30px;
+  }
+  
+  .header_expression p {
+    white-space: nowrap;
+    min-width: 100%;
+    width: fit-content;
+    font-weight: bold;
+  }
+  
+  .header_result {
+    font-weight: bold;
+    font-size: 1.3rem !important;
+    min-height: 30px;
+  }
+
+ /* app .js ka part h  */
+
+  function App() {
+    const[darkmode,setDarkMode]=useState(false)
+
+ return (
+   <div className="app" data-theme={darkmode? 'dark' :""}>
+   <div className="app_calculator">
+<div className="app_calculator_navbar">
+   <div className="app_calculator_navbar_toggle"
+   onClick={()=>setDarkMode(!darkmode)}>
+
+       <div className ={`app_calculator_navbar_toggle_circle ${darkmode ?"app_calculator_navbar_toggle_circle_active" 
+       :""}`}>
+
+       </div>
+   </div>
+   <img src={darkmode ?"./images/moon.jpg": "./images/sun.png"  }  alt=""/>
+</div>
+ <Header />
+ <Keypad />
+   </div>
+     
+   </div>
+ )
+}
+export default App;

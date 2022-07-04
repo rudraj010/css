@@ -1,0 +1,58 @@
+.services {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 25rem;
+    margin-bottom: 8rem;
+    margin-top: 7rem;
+    margin-bottom: 13rem;
+    /* scroll view */
+    padding-top: 3rem;
+   font-size: 25px;
+  }
+  .awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* gap: 20px; */
+  }
+
+  .awesome > :nth-child(1) {
+    color:orange;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right:2rem;
+  }
+  .awesome > :nth-child(2) {
+    color: rgb(8, 7, 3);
+    font-size: 1.5rem;
+    font-weight: italic;
+    
+  }
+  .awesome > :nth-child(3) {
+    color: gray;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .s-button {
+    width: 9rem;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+
+  .cards{
+    position: relative;
+  }
+
+  .cards>*{
+    position: absolute;
+  }
+
+  .s-blur2 {
+    left: 14rem;
+    top: 8rem;
+  }
+  
+  .s-blur1 {
+    top: 13rem;
+    left: -18rem;
+  }
